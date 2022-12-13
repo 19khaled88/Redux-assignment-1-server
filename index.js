@@ -21,9 +21,9 @@ app.use(cors())
 //APIs
 app.use('/api', postRoute)
 
-// app.get('/test', (req, res) => {
-//   res.send('Successful')
-// })
+app.get('/test', (req, res) => {
+  res.send('Successful')
+})
 
 app.listen(port, () => {
   console.log(`Assignment server started on server ${port}`)
